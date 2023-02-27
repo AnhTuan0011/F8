@@ -1,0 +1,144 @@
+/* tạo  biến để đổi 1 vùng nào đó (tên --boy có thể đặt tuỳ ý  */
+:root {
+    --boy: blue;
+}
+
+h1 {
+    color: var(--boy);
+}
+
+/* gọi class (. + tên class)-gọi tên ID(# + tên ID)*/
+.time2 {
+    font-size: 2rem;
+    color: red;
+    background: rgb(255, 251, 0);
+}
+
+
+.h1:hover {
+    background-color: rgba(0, 255, 51, 0.8);
+}
+
+/*  pseudoelement (lement giả) có ::before,::after,::firstline..
+trong đó đi theo những elemment đó thì luôn có CONTEND:"" VÀ DISPLAY :BLOCK*/
+
+.box::after{
+    content: "";
+    display: block;
+    width : 50%;
+    height : 50px;
+    background-color : blue;
+}
+/* chỉnh khi đưa con chuột vào thay đổi màu bằng pseudo elemnet  */
+.fb :hover{
+    color: red;
+
+}
+
+/* chỉnh sửa ảnh */
+
+.me {
+    width: 50%;
+    height: 50%; 
+}
+
+/* padding: thẻ đệm (có padding-top,right, left.../k viết gì chỉ có padding không thì khi nhập giá trị sẽ hiểu theo chiều kim đồng hồ là trên-phải-dưới-trái) */
+
+.box {
+    padding: 10px 12px ;
+    /* thêm border */
+    border: 10px;
+    border-color: #333;
+    boder style: solid;
+    /* viet tat của Border */
+    border: 2px solid ;
+
+    /* margin: khoảng cáh lể */
+    margin-top: 20px;
+
+    /* thuộc tính box-sizing */
+    box-sizing : border-box;
+
+    /* làm ảnh nền */
+
+    background-image: url(https://i1-dulich.vnecdn.net/2023/01/01/4-1672544388.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=6iQcZjccuCpf-QsMll9vVQ);
+    /* chỉnh size ảnh nền */
+
+    background-size: 100% ;
+
+    background-repeat: no-repeat;
+}
+
+.box {
+    /* back groud origin */
+    background-origin: border-box;
+    /* backgroud -position :chinhr sau vi tri anh */
+    background-position: center;
+}
+/* position : relative */
+.box {
+    /* relative : vi tri tuong doi de len duoc ca muc khac */
+    position: relative; 
+    top :10px;
+  
+}
+/* position:absolute phu thuoc vao lop cha gan no nhat */
+.hi{
+
+    box-sizing : border-box;
+    width: 100%;
+    height: 120px;
+    background-color :#333;
+    position :relative;
+}
+.hi-child {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+}
+/*  position :fixed : gan the vao dau trang hoac bat ki dau khi cuon chuot khong bi thay doi */
+.header{
+    width: 100%;
+    height: 20px;
+    background-color: #222;
+    position: fixed;
+    top: 0;
+ 
+}
+ul {
+    height :2000px;
+}
+/* position : sticky : bam dinh k ho cho nhieu trinhd duyet , Khong nen dung  */
+.time2{
+    margin-top: 50px;
+    padding: 0 16px;
+    width: 100%;
+    height: 40px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+/* can gia 1 item trong 1 box */
+.box{
+    position: relative;
+}
+h5{
+    position: absolute;
+    text-align: center;
+    /* can giau nhung bang chieu doc */
+    line-height: 60px;
+    border-left: 3px solid #333;
+    padding-top: px;
+}
+/* hien thi anh du phong khi anh chinh bi loi */
+#error{
+    width: 50%;
+    height: 50%;
+}
